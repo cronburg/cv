@@ -1,0 +1,318 @@
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx} % \includegraphics
+\usepackage{setspace} % \setstretch
+\usepackage{hyperref} % \href
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{soul}
+
+%0,105,146
+\definecolor{DarkBlue}{RGB}{0,105,146}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=black,
+}
+ 
+\urlstyle{same}
+
+\setstretch{1.0}
+
+\usepackage{datetime}
+\newdateformat{mydate}{\monthname[\THEMONTH] \THEDAY, \THEYEAR} 
+
+\begin{document}
+
+\begin{minipage}{.333 \linewidth}
+{\Large {\bf Karl Cronburg}\\
+{\small \href{mailto:karl@cs.tufts.edu}{karl@cs.tufts.edu} %
+$\vert~857\cdot206\cdot1330$}\\
+\iftoggle{resume}{}{%
+{\footnotesize \underline{\href{https://github.com/cronburg}{https://github.com/cronburg}}}\\}
+{\footnotesize \underline{\href{https://cronburg.com}{https://cronburg.com}}}}
+\end{minipage}
+\begin{minipage}{.333 \linewidth}
+\begin{center}
+\includegraphics[width=67px, height=20px]{tufts-logo.png}\hspace{1cm}
+\includegraphics[width=67px, height=30px]{bulogo_blue.png}%bucknell-seal.png}
+\end{center}
+\end{minipage}
+\begin{minipage}{.333 \linewidth}
+{\footnotesize \hspace*{\fill}\iftoggle{resume}{Resume}{CV}, Compiled \mydate \today\\
+\hspace*{\fill}\underline{\href{https://cronburg.com}{URLs underlined}}}%
+\end{minipage}
+
+\rule{\linewidth}{1pt}
+
+{\large\bf Education}\\[-.3cm]
+\rule{\linewidth}{.5pt}\\[.2cm]
+\begin{minipage}{\linewidth}
+
+{\bf Tufts University, Medford, MA:}
+{\it PhD Candidate in Computer Science (2015 - Present)}
+
+{\bf Tufts University, Medford, MA:}
+{\it Masters of Science in Computer Science (2015),} Cum. GPA: 3.9, CS GPA: 3.9\\
+Courses: Programming Languages (Fall '13), Security (Fall '13), AI (Spring
+'14), Algorithms (Spring '14), Probabilistic Programming Languages (Fall '14),
+Visualization (Fall '14), Programming Language Design (Fall '14), Compilers
+(Spring '15), Computational Geometry (Fall '15), Theory of Computation (Spring
+'16), Technical Writing (Spring '17), Runtime Systems (Fall '17), Program
+Analysis Verification \& Synthesis (Fall '18).
+
+{\bf Bucknell University, Lewisburg, PA:}
+{\it Bachelor of Science in Physics \& Computer Science (2013),} %
+Cum. GPA: 3.44, CS GPA: 3.79.\\
+\end{minipage}
+
+\vspace{-.4cm}
+{\large\bf Languages}\\[-.3cm]
+\rule{\linewidth}{.5pt}\\[.2cm]
+\begin{minipage}{\linewidth}
+
+\begin{itemize}[leftmargin=.5cm]
+\item (Proficient) C, Python, Haskell, Bash, Rust.
+\item (Familiar) C++, Java, OCaml, Coq, Lua, Lisp,
+HTML, CSS, MySQL, PHP, Javascript, Mathematica, \LaTeX.
+\end{itemize}
+
+\end{minipage}
+
+{\large\bf Research, talks, \& publications}\\[-.3cm]
+\rule{\linewidth}{.5pt}\\[.2cm]
+\begin{minipage}{\linewidth}
+{\bf Thesis Statement:} Designing, implementing, and maintaining a memory manager is
+an onerous process where memory corruption bugs are all too common because
+memory management developers lack static and dynamic analyses capable of
+checking program properties of interest to their domain.
+
+\begin{itemize}[leftmargin=.5cm]
+\item Distinguished Paper Award: \iftoggle{resume}{}{Cronburg K, Guyer S Z.} {\bf Floorplan: Spatial Layout
+in Memory Management Systems.} {\it GPCE 2019}
+%\iftoggle{resume}{}{%
+[~\underline{\href{https://cronburg.com/papers/floorplan19.pdf}{https://cronburg.com/papers/floorplan19.pdf}}~]%
+%}
+
+\item Co-author: \iftoggle{resume}{}{Ahrens MP, Cronburg K, Musca JM.}{\bf Markedly: A cartographic
+approach for mapping eDSL implementation costs.} {\it META 2017}.
+\iftoggle{resume}{}{%
+[~\underline{\href{https://cronburg.com/papers/markedly17.pdf}{https://cronburg.com/papers/markedly17.pdf}}~]%
+}
+
+\iftoggle{resume}{}{%
+\item Presenter: {\bf The PEAR costs of implementing an eDSL.} {\it META-SPLASH \iftoggle{resume}{2017.}{in
+Vancouver, CA. Sun. Oct $22^{\textrm{nd}}$, 2017.}}
+\iftoggle{resume}{}{%
+[~\underline{\href{https://cronburg.com/meta17.pdf}{https://cronburg.com/meta17.pdf}}~]}
+
+\item Presenter: {\bf The PEAR costs of implementing an eDSL.} {\it SPLASH Poster Session \iftoggle{resume}{2017.}{in
+Vancouver, CA. Wed. Oct $25^{\textrm{th}}$, 2017.}}
+\iftoggle{resume}{}{
+[~\underline{\href{https://cronburg.com/markedly-poster.pdf}{https://cronburg.com/markedly-poster.pdf}}~]}
+}
+
+\item Presenter: {\bf Garbology: A Study of How Java Objects Die.} {\it Onward! \iftoggle{resume}{2017.}{in
+Vancouver, CA. Fri. Oct $27^{\textrm{th}}$, 2017.}}
+\iftoggle{resume}{}{
+[~\underline{\href{https://cronburg.com/onward17.pdf}{https://cronburg.com/onward17.pdf}}~]}
+
+\item Presenter: {\bf %
+Debugging Memory Safety Errors in Memory Managers.} {\it NEPLS%
+\iftoggle{resume}{ 2017.}{}%
+\iftoggle{resume}{}{, at UMass Lowell.
+Fri. June $2^{\textrm{nd}}$, 2017.}}
+\iftoggle{resume}{}{
+[~\underline{\href{https://cronburg.com/nepls17.pdf}{https://cronburg.com/nepls17.pdf}}~]}
+
+\item Literature Review: {\bf Declarative Descriptions of Memory Management Systems.} %
+\iftoggle{resume}{\it Fall 2016.}{- a compilation of memory layouts used by state-of-the-art runtime systems, written
+in a common description language. {\it Fall 2016.}
+[~\underline{\href{https://cronburg.com/papers/litrev16.pdf}{https://cronburg.com/papers/litrev16.pdf}%
+}~]}
+
+\end{itemize}
+
+\end{minipage}
+
+{\large\bf Experience}\\[-.3cm]
+\rule{\linewidth}{.5pt}\\[.2cm]
+\begin{minipage}{\linewidth}
+{\bf Software Engineering Intern,}{\it~at Red Hat, Summer 2016.}\\[-.4cm]
+\begin{itemize}[leftmargin=.5cm]
+\item Extended the open source flexible I/O tester (fio) to support logging and
+real-time exfiltration of latency histogram data, significantly increasing data
+accuracy.
+[~\underline{\href{https://github.com/axboe/fio/commits?author=cronburg}{%
+https://github.com/axboe/fio/commits?author=cronburg}}~]
+\iftoggle{resume}{}{%
+\item Developed python scripts for processing latency data from a distributed
+file system, CEPH, based on the weighted-percentiles method.
+[~\underline{\href{https://www.cronburg.com/fio/MCV\_latencies.pdf}{%
+https://www.cronburg.com/fio/MCV\_latencies.pdf}}~]
+\item Extensive documentation was recorded on what the data meant and how it
+was being analyzed.
+[~\underline{\href{https://cronburg.com/fio/cloud-latency-problem-measurement}{https://cronburg.com/fio/cloud-latency-problem-measurement}%
+}~]}
+\end{itemize}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+{\bf Masters Project,}{\it~at Tufts University, 2015.}\\[-.4cm]
+\begin{itemize}[leftmargin=.5cm]
+\item Implemented a Valgrind tool for detecting virtual machine level memory
+  corruption with runtime type checking based on annotations of type transition.
+[~\underline{\href{https://cronburg.com/masters}{https://cronburg.com/masters}}~]
+\iftoggle{resume}{}{%
+\item Evaluated this methodology by reproducing historical bugs in a popular
+  research virtual machine, JikesRVM.}
+\end{itemize}
+\end{minipage}
+
+\iftoggle{resume}{\vspace{-.2cm}}{}
+\begin{minipage}{\linewidth}
+{\bf Research Experience for Undergraduates,}{\it~at MIT Haystack Observatory, Summer 2012.}%
+\iftoggle{resume}{~Radar data analysis.}{\\[-.4cm]
+\begin{itemize}[leftmargin=.5cm]
+\iftoggle{resume}{}{%
+\item Explored the design space of a domain-specific interface definition language for
+specifying the types of data generated by atmospheric radar antennas.}
+\item Integrated a specification language into a distributed radar pipeline based on the
+publish-subscribe messaging pattern.
+[~\underline{\href{https://cronburg.com/reu2012.png}{https://cronburg.com/reu2012.png}%
+}~]
+\end{itemize}%
+}
+\end{minipage}
+
+\iftoggle{resume}{\vspace{-.2cm}}{}
+\begin{minipage}{\linewidth}
+{\bf Research Experience for Undergraduates,}{\it~at Bucknell University, Summer 2011.}%
+\iftoggle{resume}{~Astronomical data analysis.}{\\[-.4cm]
+\begin{itemize}[leftmargin=.5cm]
+\item Ported astronomical analyses written in Interactive Data Language (IDL) to Python.
+\iftoggle{resume}{}{%
+\item Improved data analyses to be more robust across the entire data set (dozens of
+  galactic images).
+\item Applied a novel radial analysis to more accurately trace the molecular
+content and structure of a galaxy.}
+	[~\underline{\href{https://cronburg.com/reu2011.png}{https://cronburg.com/reu2011.png}}~]
+\end{itemize}%
+}
+\end{minipage}
+
+\iftoggle{resume}{\vspace{-.2cm}}{}
+\begin{minipage}{\linewidth}
+{\bf Teaching Assistant,}{\it~at Bucknell University, 2010 - 2013.}%
+\iftoggle{resume}{~Various CS \& Physics courses.}{\\[-.4cm]
+\begin{itemize}[leftmargin=.5cm]
+\item Computer Architecture, Programming Languages, Intro to CS, Physics I \&
+  II, Quantum Mechanics, Electronics.
+\end{itemize}}
+\end{minipage}
+
+\iftoggle{resume}{\vspace{-.2cm}}{}
+\begin{minipage}{\linewidth}
+{\bf Teaching Assistant,}{\it~at Tufts University, 2013 - 2016.}%
+\iftoggle{resume}{~Operating Systems, Networks, Distributed Systems.}{\\[-.4cm]
+\begin{itemize}[leftmargin=.5cm]
+\item Operating Systems, Networks, Internet-Scale Distributed Systems.
+\end{itemize}}
+\end{minipage}
+
+\iftoggle{resume}{\vspace{-.2cm}}{}
+\begin{minipage}{\linewidth}
+{\bf Research Assistant,}{\it~with the Tufts Redline Research group, 2016 - Present.}
+\iftoggle{resume}{Runtime systems \& garbage collection}{\\[-.4cm]
+\begin{itemize}[leftmargin=.5cm]
+  \item Collaborated with Sam Guyer (PhD advisor) on grants pertaining to
+    runtime system performance and correctness, with a focus on dynamic analysis
+    and formal verification.
+[~\underline{\href{http://www.cs.tufts.edu/r/redline/}{%
+http://www.cs.tufts.edu/r/redline/}}~]
+\end{itemize}}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+{\large\bf Other projects}\\[-.2cm]
+\rule{\linewidth}{.5pt}\\[.2cm]
+{\bf ANTLR-Haskell,}{\it~Fall 2016 - Present.}
+\iftoggle{resume}{Primary developer of a language parsing framework.}{
+\begin{itemize}[leftmargin=.5cm]
+\item Primary developer of a language parsing framework.
+\underline{\href{https://hackage.haskell.org/package/antlr-haskell-0.1.0.0}{published on Hackage.}}
+
+[~\underline{\href{https://www.cronburg.com/2018/antlr-haskell-project}{%
+https://www.cronburg.com/2018/antlr-haskell-project}}~]
+\end{itemize}%
+}
+
+{\bf PADS-Haskell,}{\it~Summer 2017 - Present.}
+\iftoggle{resume}{Primary maintainer of an ad-hoc data parsing language.}{%
+\begin{itemize}[leftmargin=.5cm]
+\item Primary maintainer and part-time developer of
+an ad-hoc data parsing language supporting apache logs, scientific data, and more,
+\underline{\href{https://hackage.haskell.org/package/pads-haskell}{as published on Hackage.}}
+[~\underline{\href{https://github.com/padsproj/pads-haskell}{%
+https://github.com/padsproj/pads-haskell}}~]
+\end{itemize}%
+}
+
+\iftoggle{resume}{}{%
+{\bf Polyhack Hackathon,}{\it~at Tufts University, 2014}\\[-.4cm]
+\begin{itemize}[leftmargin=.5cm]
+\item Implemented shadow memory, based on the algorithm in the seminal paper
+  describing Valgrind's memcheck tool.
+[~\underline{\href{https://github.com/cronburg/shadow-memory}{%
+https://github.com/cronburg/shadow-memory}}~]
+\end{itemize}%
+}
+
+\iftoggle{resume}{}{%
+{\bf Using Probabilistic Programming Languages to Model Game Heuristics,}{\it~%
+Fall 2014}
+\begin{itemize}[leftmargin=.5cm]
+\item Applied Markov chain Monte Carlo random sampling to compare and contrast
+common strategies of a popular card game.%
+~[~\underline{\href{https://cronburg.com/tufts/ppl}{https://cronburg.com/tufts/ppl}}~]
+\end{itemize}%
+}
+
+{\bf DeckBuild: A Declarative eDSL for Card Game Design,}{\it~Fall 2014.}
+\iftoggle{resume}{Specification language for card games.}{%
+\begin{itemize}[leftmargin=.5cm]
+\item Developed a quasiquoter-based specification language for defining the rules of
+a popular card game.%
+~[~\underline{\href{https://cronburg.com/tufts/pld}{https://cronburg.com/tufts/pld}}~]
+\end{itemize}%
+}
+
+\end{minipage}
+
+{\large\bf Community}\\[-.3cm]
+\rule{\linewidth}{.5pt}\\[.2cm]
+\begin{minipage}{\linewidth}
+\begin{itemize}[leftmargin=.5cm]
+  \item Conference volunteer at SPLASH 2018, {\it Boston, MA.}
+  \item Artifact Evaluation Committee member, \underline{\href{https://2017.splashcon.org/committee/splash-2017-oopsla-artifacts-artifact-evaluation-committee}{SPLASH 2017.}}
+  \item Artifact Evaluation Committee member, \underline{\href{https://2016.splashcon.org/committee/splash-2016-artifacts-organizing-committee}{SPLASH 2016.}}
+  \item Conference volunteer at PLDI 2016, {\it Santa Barbara, CA.}
+  \item Tufts \underline{\href{http://2018.polyhack.tufts.io}{Polyhack Hackathon}}
+				mentor in 2015, 2016, and 2018.
+  \item Attended Programming Languages Mentoring Workshop (PLMW) at ICFP 2016.
+  \item Treasurer of the Tufts Computer Science League of Learning, 2015-2017
+\end{itemize}
+
+\end{minipage}
+
+
+%GPA, links, stackoverflow
+
+
+
+\end{document}

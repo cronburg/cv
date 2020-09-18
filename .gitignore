@@ -2,3 +2,5 @@
 .*.swp
 /*.zip
 /*.pdf
+/*.aux
+/*.out
