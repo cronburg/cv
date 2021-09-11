@@ -50,12 +50,12 @@ $\vert~857\cdot206\cdot1330$}\\
 
 \rule{\linewidth}{1pt}
 
-{\large\bf Education}\\[-.3cm]
+{\large\bf Education \& Languages}\\[-.3cm]
 \rule{\linewidth}{.5pt}\\[.2cm]
 \begin{minipage}{\linewidth}
 
 {\bf Tufts University, Medford, MA:}
-{\it PhD Candidate in CS (2015 - Present)}
+{\it PhD Candidate in CS (2016 - Present)}
 
 {\bf Tufts University, Medford, MA:}
 {\it Masters of Science in CS (2015),} Cum. GPA: 3.9, CS GPA: 3.9\\
@@ -72,76 +72,32 @@ Cum. GPA: 3.44, CS GPA: 3.79.\\
 \end{minipage}
 
 \vspace{-.4cm}
-{\large\bf Languages}\\[-.3cm]
-\rule{\linewidth}{.5pt}\\[.2cm]
+
+%{\large\bf Languages}\\[-.3cm]
+%\rule{\linewidth}{.5pt}\\[.2cm]
 \begin{minipage}{\linewidth}
-
 \begin{itemize}[leftmargin=.5cm]
-\item (Proficient) C, Python, Haskell, Bash, Rust.
-\item (Familiar) C++, Java, OCaml, Coq, Lua, Lisp,
-HTML, CSS, MySQL, PHP, Javascript, Mathematica, \LaTeX.
+\item (Languages \textemdash~Proficient) C/C++, Python, MATLAB, Haskell, Bash.
+\item (Languages \textemdash~Familiar) Rust, Java, HTML, CSS, MySQL, PHP, Javascript,
+Mathematica, \LaTeX.
 \end{itemize}
-
-\end{minipage}
-
-{\large\bf Research, talks, \& publications}\\[-.3cm]
-\rule{\linewidth}{.5pt}\\[.2cm]
-\begin{minipage}{\linewidth}
-{\bf Thesis Statement:} Designing, implementing, and maintaining a memory manager is
-an onerous process where memory corruption bugs are all too common because
-memory management developers lack static and dynamic analyses capable of
-checking program properties of interest to their domain.
-
-\begin{itemize}[leftmargin=.5cm]
-\item Distinguished Paper Award: \iftoggle{resume}{}{Cronburg K, Guyer S Z.} {\bf Floorplan: Spatial Layout
-in Memory Management Systems.} {\it GPCE 2019}
-%\iftoggle{resume}{}{%
-[~\underline{\href{https://cronburg.com/papers/floorplan19.pdf}{https://cronburg.com/papers/floorplan19.pdf}}~]%
-%}
-
-\item Co-author: \iftoggle{resume}{}{Ahrens MP, Cronburg K, Musca JM.}{\bf Markedly: A cartographic
-approach for mapping eDSL implementation costs.} {\it META 2017}.
-\iftoggle{resume}{}{%
-[~\underline{\href{https://cronburg.com/papers/markedly17.pdf}{https://cronburg.com/papers/markedly17.pdf}}~]%
-}
-
-\iftoggle{resume}{}{%
-\item Presenter: {\bf The PEAR costs of implementing an eDSL.} {\it META-SPLASH \iftoggle{resume}{2017.}{in
-Vancouver, CA. Sun. Oct $22^{\textrm{nd}}$, 2017.}}
-\iftoggle{resume}{}{%
-[~\underline{\href{https://cronburg.com/meta17.pdf}{https://cronburg.com/meta17.pdf}}~]}
-
-\item Presenter: {\bf The PEAR costs of implementing an eDSL.} {\it SPLASH Poster Session \iftoggle{resume}{2017.}{in
-Vancouver, CA. Wed. Oct $25^{\textrm{th}}$, 2017.}}
-\iftoggle{resume}{}{
-[~\underline{\href{https://cronburg.com/markedly-poster.pdf}{https://cronburg.com/markedly-poster.pdf}}~]}
-}
-
-\item Presenter: {\bf Garbology: A Study of How Java Objects Die.} {\it Onward! \iftoggle{resume}{2017.}{in
-Vancouver, CA. Fri. Oct $27^{\textrm{th}}$, 2017.}}
-\iftoggle{resume}{}{
-[~\underline{\href{https://cronburg.com/onward17.pdf}{https://cronburg.com/onward17.pdf}}~]}
-
-\item Presenter: {\bf %
-Debugging Memory Safety Errors in Memory Managers.} {\it NEPLS%
-\iftoggle{resume}{ 2017.}{}%
-\iftoggle{resume}{}{, at UMass Lowell.
-Fri. June $2^{\textrm{nd}}$, 2017.}}
-\iftoggle{resume}{}{
-[~\underline{\href{https://cronburg.com/nepls17.pdf}{https://cronburg.com/nepls17.pdf}}~]}
-
-\item Literature Review: {\bf Declarative Descriptions of Memory Management Systems.} %
-\iftoggle{resume}{\it Fall 2016.}{- a compilation of memory layouts used by state-of-the-art runtime systems, written
-in a common description language. {\it Fall 2016.}
-[~\underline{\href{https://cronburg.com/papers/litrev16.pdf}{https://cronburg.com/papers/litrev16.pdf}%
-}~]}
-
-\end{itemize}
-
 \end{minipage}
 
 {\large\bf Experience}\\[-.3cm]
 \rule{\linewidth}{.5pt}\\[.2cm]
+
+\vspace{-.6cm}
+
+\begin{minipage}{\linewidth}
+{\bf Senior Compiler Engineer,}{\it~at The MathWorks, Sept. 2021 \textemdash~Present}\\[-.4cm]
+\begin{itemize}[leftmargin=0.5cm]
+\item Actively developing, designing, architecting, and maintaining the core
+JIT compilation process for the MATLAB programming language. I regularly
+inspect and optimize C++ and machine code, help design new language features,
+and solve problems which arise in the development process.
+\end{itemize}
+\end{minipage}
+
 \begin{minipage}{\linewidth}
 {\bf Software Engineering Intern,}{\it~at Red Hat, Summer 2016.}\\[-.4cm]
 \begin{itemize}[leftmargin=.5cm]
@@ -237,6 +193,66 @@ http://www.tupl.cs.tufts.edu/}}~,~%
 \underline{\href{http://www.cs.tufts.edu/r/redline/}{%
 http://www.cs.tufts.edu/r/redline/}}~]
 \end{itemize}}
+\end{minipage}
+
+{\large\bf Research, talks, \& publications}\\[-.3cm]
+\rule{\linewidth}{.5pt}\\[.2cm]
+\begin{minipage}{\linewidth}
+{\bf Thesis Statement:} It is possible to systematically specify the memory
+layout of the most crucial parts of a memory manager so as to reliably
+detect and diagnose otherwise difficult-to-track-down memory errors.
+By defining a memory error as a mismatch between the intentions of code
+and the observed type-state of memory, a debugger can usefully report
+the presence of incongruous memory operations due to a buggy memory manager.
+
+\begin{itemize}[leftmargin=.5cm]
+\item Distinguished Paper Award: \iftoggle{resume}{}{Cronburg K, Guyer S Z.} {\bf Floorplan: Spatial Layout
+in Memory Management Systems.} {\it GPCE 2019}
+%\iftoggle{resume}{}{%
+[~\underline{\href{https://cronburg.com/papers/floorplan19.pdf}{https://cronburg.com/papers/floorplan19.pdf}}~]%
+%}
+
+\iftoggle{resume}{}{%
+\item Co-author: \iftoggle{resume}{}{Ahrens MP, Cronburg K, Musca JM.}{\bf Markedly: A cartographic
+approach for mapping eDSL implementation costs.} {\it META 2017}.
+\iftoggle{resume}{}{%
+[~\underline{\href{https://cronburg.com/papers/markedly17.pdf}{https://cronburg.com/papers/markedly17.pdf}}~]%
+}%
+}
+
+\iftoggle{resume}{}{%
+\item Presenter: {\bf The PEAR costs of implementing an eDSL.} {\it META-SPLASH \iftoggle{resume}{2017.}{in
+Vancouver, CA. Sun. Oct $22^{\textrm{nd}}$, 2017.}}
+\iftoggle{resume}{}{%
+[~\underline{\href{https://cronburg.com/meta17.pdf}{https://cronburg.com/meta17.pdf}}~]}
+
+\item Presenter: {\bf The PEAR costs of implementing an eDSL.} {\it SPLASH Poster Session \iftoggle{resume}{2017.}{in
+Vancouver, CA. Wed. Oct $25^{\textrm{th}}$, 2017.}}
+\iftoggle{resume}{}{
+[~\underline{\href{https://cronburg.com/markedly-poster.pdf}{https://cronburg.com/markedly-poster.pdf}}~]}
+}
+
+\iftoggle{resume}{}{%
+\item Presenter: {\bf Garbology: A Study of How Java Objects Die.} {\it Onward! \iftoggle{resume}{2017.}{in
+Vancouver, CA. Fri. Oct $27^{\textrm{th}}$, 2017.}}
+\iftoggle{resume}{}{
+[~\underline{\href{https://cronburg.com/onward17.pdf}{https://cronburg.com/onward17.pdf}}~]}
+
+\item Presenter: {\bf %
+Debugging Memory Safety Errors in Memory Managers.} {\it NEPLS%
+\iftoggle{resume}{ 2017.}{}%
+\iftoggle{resume}{}{, at UMass Lowell.
+Fri. June $2^{\textrm{nd}}$, 2017.}}
+\iftoggle{resume}{}{
+[~\underline{\href{https://cronburg.com/nepls17.pdf}{https://cronburg.com/nepls17.pdf}}~]}
+
+\item Literature Review: {\bf Declarative Descriptions of Memory Management Systems.} %
+\iftoggle{resume}{\it Fall 2016.}{- a compilation of memory layouts used by state-of-the-art runtime systems, written
+in a common description language. {\it Fall 2016.}
+[~\underline{\href{https://cronburg.com/papers/litrev16.pdf}{https://cronburg.com/papers/litrev16.pdf}%
+}~]}
+} % iftoggle{resume}
+\end{itemize}
 \end{minipage}
 
 \begin{minipage}{\linewidth}
